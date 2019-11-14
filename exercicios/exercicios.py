@@ -60,3 +60,41 @@
 # print('--')
 # lista[6] = 'Bragantino'
 # print(lista)
+
+# Dicionários
+# dados = {
+#     'cidades': {
+#         'saopaulo': {
+#             'nome': 'São Paulo',
+#             'municipios': 645,
+#             'populacao': 12.18
+#         },
+#         'riodejaneiro': {
+#             'nome': 'Rio de Janeiro',
+#             'municipios': 92,
+#             'populacao': 6.32
+#         },
+#         'minasgerais': {
+#             'nome': 'Minas Gerais',
+#             'municipios': 31,
+#             'populacao': 20.87
+#         }
+#     }
+# }
+# # Print a quantidade de municípios de minas
+# # Print a quantidade de municípios do rio
+# # Print a população de minas em milhões
+# # Print a população de são paulo em milhões
+# # Print o nome de são paulo
+# # -- Reposta --
+# print(dados['cidades']['minasgerais']['municipios'])
+# print(dados['cidades']['riodejaneiro']['municipios'])
+# print(dados['cidades']['minasgerais']['populacao'] * 1000000)
+# print(dados['cidades']['saopaulo']['populacao'] * 1000000)
+# print(dados['cidades']['saopaulo']['nome'])
+
+# Conversão de tipos
+# dado a variável var, peça que o usuário digite um número e multipliquepor var
+# var = 15
+# num = print(int(input('Digite um número: ')) * var)
+# print(num)
