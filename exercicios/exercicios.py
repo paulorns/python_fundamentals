@@ -98,3 +98,57 @@
 # var = 15
 # num = print(int(input('Digite um número: ')) * var)
 # print(num)
+
+# Faça um programa para a leitura de duas notas parciais de um aluno.
+# Média: 7
+# O programa deve calcular a média alcançada por aluno e apresentar:
+# A mensagem de "Aprovado", se a média alcançada for maior ou igual a 7;
+# A mensagem de "Reprovado", se a média for menor do que 7;
+# A mensagem de "Aprovado com Distinção", se a média for igual a 10.
+# -- Resposta --
+# nome_aluno = input('Digite o nome do aluno: ')
+# nota1 = float(input('Informe a primeira nota: '))
+# nota2 = float(input('Informe a segunda nota: '))
+# resultado = (nota1 + nota2) / 2
+# print(f'A nota do aluno {nome_aluno} é {resultado}')
+# if resultado == 10.0:
+#     print('Aprovado com Distinção')
+# elif resultado >= 7.0:
+#     print('Aprovado')
+# else:
+#     print('Reprovado')
+
+# Try e except
+# 1 - Faça uma lista com 10 nomes de usuários
+# 2 - peça para o usuário digitar o nome de usuario
+# 3 - caso não existaesse usuario na lista
+# 4 - dê um NameError e volte para a parte 2
+# lista_acesso = ['paulo', 'renato', 'camila', 'jorge', 'julio']
+# while True:
+#     try:
+#         login = input('Digite o seu login: ')
+#         for valida in lista_acesso:
+#             if login.lower() != valida:
+#                 raise NameError('Login não encontrado!')
+#             else:
+#                 print(f'Seja bem vindo {login}, acesso permitido!')
+#                 break
+#         break
+#     except NameError as l:
+#         print(l)
+#         continue
+#
+# Alterativa para o exercicio acima
+# lista_acesso = ['paulo', 'renato', 'camila', 'jorge', 'julio']
+# while True:
+#     try:
+#         login = input('Digite o seu login: ')
+#         if login.lower() not in lista_acesso:
+#             raise NameError('Login não encontrado!')
+#         else:
+#                 print(f'Seja bem vindo {login}, acesso permitido!')
+#                 break
+#         break
+#     except NameError as l:
+#         print(l)
+#         continue
