@@ -152,3 +152,11 @@
 #     except NameError as l:
 #         print(l)
 #         continue
+
+#Funções
+# criar uma função que pega o conteúdo da variável texto e deixa em caixa alta
+# texto = 'Eu sou um cérebro, Watson. O resto é mero apêndice.'
+# def upper_texto(texto):
+#     return texto.upper()
+# arquivo_upper = upper_texto(texto)
+# print(arquivo_upper)

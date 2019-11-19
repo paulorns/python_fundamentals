@@ -95,14 +95,47 @@
 #         continue
 
 # Raise Exception
-while True:
-    try:
-        login = input('Digite o login: ')
-        if login.lower() == 'bryan':
-            raise NameError('Bryan está banido!')
-        else:
-            print(f'Bem vindo {login}, acesso permitido!')
-            break
-    except NameError as e:
-        print(e)
-        continue
+# while True:
+#     try:
+#         login = input('Digite o login: ')
+#         if login.lower() == 'bryan':
+#             raise NameError('Bryan está banido!')
+#         else:
+#             print(f'Bem vindo {login}, acesso permitido!')
+#             break
+#     except NameError as e:
+#         print(e)
+#         continue
+
+# Revisão de Tratamento de exceções:
+# try:
+#     x = int(input('Digite o primeiro número: '))
+#     y = int(input('Digite o segundo número: '))
+#     print(x + y)
+# except ValueError as e:
+#     print('Digite apenas números', e)
+
+# Mais um exemplo de tratamento de exceção:
+# while True:
+#     try:
+#         x = int(input('Digite o primeiro número: '))
+#         y = int(input('Digite o segundo número: '))
+#         print(x + y)
+#         break
+#     except Exception as e:
+#         print("Digite apenas números")
+#         continue
+
+# Revisão de Raise, para criar e tratar a exceção:
+# usuarios = ['ana', 'caio', 'felipe']
+# while True:
+#     try:
+#         user = input('Digite o nome de usuário: ')
+#         if user == 'Ana':
+#             raise NameError('Usuário bloqueado!!')
+#         else:
+#             print('Bem vindo(a)!')
+#             break
+#     except NameError as n:
+#         print(n)
+#         continue
