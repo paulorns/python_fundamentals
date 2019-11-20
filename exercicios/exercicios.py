@@ -160,3 +160,28 @@
 #     return texto.upper()
 # arquivo_upper = upper_texto(texto)
 # print(arquivo_upper)
+
+# Crie uma função que peça 2 números e retorne o maior
+# se o valor for igual print "Valores iguais"
+# guarde em variável e print
+# def valida(var1, var2):
+#     if var1 == var2:
+#         return 'Valores iguais'
+#     elif var1 > var2:
+#         return var1
+#     else:
+#         return var2
+#     # outra forma de fazer validação:
+#     # else:
+#     # return max(var1, var2)
+#
+# num1 = float(input('Digite o primeiro número: '))
+# num2 = float(input('Digite o segundo número: '))
+#
+# resultado = valida(num1, num2)
+# print(resultado)
+
+# crie uma função que receba um número indefinido de valores númericos
+# com *args e retorne os valores ordenados de forma descrecente.
+# def ordenados(*valores):
+#     return sorted(valores, reverse=True)
