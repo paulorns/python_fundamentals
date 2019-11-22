@@ -185,3 +185,97 @@
 # com *args e retorne os valores ordenados de forma descrecente.
 # def ordenados(*valores):
 #     return sorted(valores, reverse=True)
+
+# POO: Herança
+# Crie uma classe que represente um automóvel
+# Com atributos:
+# - Ano de fabricação;
+# - Marca;
+# - Preço;
+# Métodos:
+# - get_ano;
+# - get_marca;
+# - get_preco;
+#
+# class Automovel():
+#     '''Classe que representa um automóvel'''
+#     def __init__(self, ano, marca, preco): # Atributos necessários, devem ser passados aqui!
+#         self.ano = ano
+#         self.marca = marca
+#         self.preco = preco
+# #    
+#     def get_ano(self):
+#         print(f'Ano de fabricação: {self.ano}')
+# #
+#     def get_marca(self):
+#         print(f'Marca: {self.marca}')
+# #
+#     def get_preco(self):
+#         print(f'Preço: {self.preco}')
+# #
+# # carro1 = Automovel(2019, 'Ford', 25000.00)
+# # carro1.get_ano()
+# # carro1.get_marca()
+# # carro1.get_preco()
+
+# # Segunda parte do desafio.
+# # Crie uma classe Moto que terá o atributo:
+# # - Tipo e herdará os atributos/métodos da classe automóvel;
+# # Obs.: 
+# # - Lembresse que a moto só pode ligar se estiver desligada e desligar se ela estiver ligada
+# # - Acelerar e Frear só se estiver ligada
+# # Os métodos:
+# # - Ligar()
+# # - Desligar()
+# # - Acelerar()
+# # - Frear()
+# #
+# ligada = False
+# #
+# class Moto(Automovel):
+#     def __init__(self, ano, marca, preco, tipo = 'Moto', ligada=True):
+#         super().__init__(ano, marca, preco)
+#         self.tipo = tipo
+#         self.ligada = ligada
+# #
+#     def ligar(self):
+#         global ligada
+#         if ligada == False:
+#             print('Ligando...')
+#             ligada = True
+#         else:
+#             print('Moto está Ligada!')
+# #
+#     def desligar(self):
+#         global ligada
+#         if ligada == True:
+#             print('Desligando...')
+#             ligada = False
+#         else:
+#             print('Moto está desligada!')
+# #
+#     def acelerar(self):
+#         global ligada
+#         if ligada == True:
+#             print('Acelerando...')
+#         else:
+#             print('Moto está desligada')
+# #
+#     def frear(self):
+#         global ligada
+#         if ligada == True:
+#             print('Freando...')
+#         else:
+#             print('Moto está desligada')
+# #
+# moto1 = Moto(2012, 'BMW', 12000)
+# moto1.desligar()
+# moto1.ligar()
+# moto1.acelerar()
+# moto1.frear()
+# moto1.get_ano()
+# moto1.get_marca()
+# moto1.get_preco()
+#
+# Criar o mesmo exercício acima, utilizando o try para tratar os erros das condições
+# e o raise para criar os erros de quando as condições não forem atendidas.
